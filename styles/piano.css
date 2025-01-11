@@ -1,0 +1,394 @@
+/*All pages*/
+body {
+    background-color: #75563e;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Header*/
+  .logo{
+    height: 130px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  .logolink{
+    border:none;
+  }
+  .logolink:hover{
+    background-color: transparent;
+  }
+  nav {
+    background-color:#e6b986;
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    list-style-type: none;
+    
+  }
+  nav  {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    background-color: #e6b986;
+    width:100%;
+  }
+  nav li{
+  display: inline-block;
+  padding:20px;
+  }
+  nav a {
+    padding: 0.8em;
+    min-width: 120px;
+    text-decoration: none;
+    padding: 16px;
+    padding-block: 16px;
+    border: 1px solid #75563e;
+    transition: 0.5s;
+    margin: 10px;
+  }
+  nav a:link, nav a:visited {
+    color: #1c110f;
+  }
+  nav a:hover {
+    color:#e6b986;
+    background-color: #75563e;
+  }
+  #top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+  }
+  ul {
+    align-items: left;
+    padding: 0px 0px;
+  }
+  li {
+    width: 160px;
+    margin:10px 10px 10px 10px;
+    padding: 10px;
+    margin-right: 10px;
+    align-items: center;
+  }
+  li a{
+    width: 15%;
+  }
+  a{
+    min-width: 100px;
+    border-radius: 10px;
+  }
+  .top{
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid #75563e; */
+  }
+  #intro {
+    text-align: center;
+    align-items: center;
+  }
+  /*footer*/
+  footer{
+    background-color: cadetblue;
+    /*padding: 25px 50px;*/
+    /*margin-top: 200px;*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+  }
+  footer p{
+    font-size: 1.2em;
+    color: #1c110f;
+  }
+  footer p a:hover{
+    text-decoration: underline;
+  }
+  footer a{
+    color: #1c110f;
+  }
+  footer a:hover{
+    color:#e6b986;
+  }
+  /*home*/
+  video{
+    height: fit-content;
+    width: 100%;
+  }
+  #intro{
+    padding:100px;
+    width: fit-content;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+  }
+  #me{
+    width: 75%;
+    padding: 10px;
+    margin: 10px;
+  }
+  /*about me*/
+  #txt{
+    float: left;
+    padding: 20px;
+    width: 80%;
+    padding-left: 10%;
+  }
+  #aboutMe{
+    background-color: #e6b986;
+  }
+  .filler{
+    border: 15px solid #75563e;
+    padding: 50px;
+    margin: 20px;
+  }
+  #me{
+    border: 10px solid #75563e;
+    padding: 20px;
+    margin: 10px;
+  }
+  /*Testimonials page*/
+  .grid-container{
+    display: grid;
+    gap: 10px;
+    border: 5px;
+    padding: 10px;
+    margin: 15px;
+  }
+  .person img{
+    height: 400px;
+    width: 55%;
+    height: auto;
+    display:block;
+    margin: 0 auto;
+  }
+  #name{
+    text-decoration: underline;
+    text-align: center;
+  }
+  #review{
+    width: 80%;
+    border: 5px;
+    padding: 10px;
+    margin: 15px;
+  }
+  .txt{
+    width: 75px;
+  }
+  .container {
+    border: 2px solid #e6b986;
+    background-color:#e6b986;
+    border-radius: 5px;
+    padding: 24px 32px;
+    margin: 16px 36px;
+  }
+  .container p{
+    line-height: 1.6em;
+  }
+  /* Clear floats after containers */
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+  .container img {
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Increase the font-size of a span element */
+  .container span {
+    font-size: 20px;
+    margin-right: 15px;
+  }
+  
+  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+  
+  #person1{
+  margin: 10px;
+  grid-row: 1/2;
+  grid-column: 1/2;
+  }
+  #person2{
+  margin: 10px;
+  grid-row:1/2;
+  grid-column:2/3;
+  }
+  #person3{
+    margin: 10px;
+    grid-row: 1/2;
+    grid-column:3/4 ;
+  }
+  #person4{
+    margin: 10px;
+    grid-row:1/2 ;
+    grid-column:4/5 ;
+  }
+  #comment1{
+    grid-row:2/3;
+    grid-column:1/2 ;
+  }
+  #comment2{
+    grid-row:2/3;
+    grid-column:2/3 ;
+  }
+  #comment3{
+    margin: 15px;
+    grid-row:2/3;
+    grid-column:3/4 ;
+  }
+  #comment4{
+    margin: 15px;
+    grid-row:2/3;
+    grid-column:4/5 ;
+  }
+  .row {
+    margin: 8px 16px;
+  }
+  footer a{
+    text-decoration: none;
+  }
+  /* Add padding BETWEEN each column */
+  .row,
+  .row>.column {
+    padding: 8px;
+  }
+  .social img{
+    height: 75px;
+  }
+  .column {
+    float: left;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  div.letter{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #e6b986;
+    background-color:#e6b986;
+    border-radius: 5px;
+    padding: 24px 32px;
+    margin: 16px auto;
+    flex-direction: column;
+  }
+  .letter img{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #e6b986;
+    background-color:#e6b986;
+    border-radius: 5px;
+    padding: 24px 32px;
+    margin: 16px 36px;
+    align-items: center;
+    width: 75%;
+  }
+  .letter a{
+    text-align: center;
+    color: #1c110f;
+  }
+  
+  .letter a:hover{
+  color: #75563e;
+  }
+  
+  /*pricing*/
+  
+  #aboutMe{
+    border: 10px solid #75563e;
+    padding: 20px;
+    margin: 10px;
+  }
+  #service{
+    background-color: #e6b986;
+    border: 10px solid #e6b986;
+    padding: 24px 32px;
+    margin: 16px 36px;
+    height: fit-content;
+  }
+  #price{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 900px){
+    body{
+      width: 100%;
+      justify-content: space-around;
+    }
+    .grid-container{
+      display:block;
+    }
+    nav li, nav a {
+      display: block;
+      width: 80%;
+    }
+    #top {
+      flex-direction: column;
+      align-content: stretch;
+      width: 100%;
+    }
+    #me{
+      width: 75%;
+      padding: 20px;
+      margin: 10px;
+    }
+    ul {
+      padding-inline-start: 0;
+    }
+    nav {
+      line-height: 1em;
+      font-size: 1em;
+    }  
+    footer p, footer a {
+      font-size: 1em;
+    }
+    #price{
+      display: block;
+    }
+    li{
+      width: 80%;
+    }
+  }
+  @media (max-width: 500px) {
+  
+    #top{
+      margin: 10px;
+      padding:10px;
+    }
+    .container {
+      text-align: center;
+    }
+    nav{
+      display: block;
+    }
+    nav img{
+      display: block;
+      margin: 0 auto;
+    }
+    #me{
+      width: 75%;
+      padding: 20px;
+      margin: 10px;
+    }
+    .container img {
+      margin: auto;
+      float: none;
+      display: block;
+    }
+    .letter img{
+      width: 100%;
+    }
+  footer{
+    flex-direction: column;
+  }
+  }
