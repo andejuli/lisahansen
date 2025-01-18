@@ -7,11 +7,14 @@ body {
     padding: 0;
     margin: 0;
   }
-  
+#content{
+  max-width: 1600px;
+  margin: 0 auto;
+}
   /* Header*/
   .logo{
     height: 130px;
-    border-radius: 50%;
+    
     display: block;
     margin: 0 auto;
   }
@@ -35,6 +38,7 @@ body {
     grid-template-columns: 200px 1fr;
     background-color: #e6b986;
     width:100%;
+    align-items: center;
   }
   nav li{
   display: inline-block;
@@ -47,8 +51,9 @@ body {
     padding: 16px;
     padding-block: 16px;
     border: 1px solid #75563e;
-    transition: 0.5s;
+    transition: 0.6s;
     margin: 10px;
+    border-radius: 5px;
   }
   nav a:link, nav a:visited {
     color: #1c110f;
@@ -68,19 +73,15 @@ body {
     padding: 0px 0px;
   }
   li {
-    width: 160px;
+    width: 300px;
     margin:10px 10px 10px 10px;
     padding: 10px;
-    margin-right: 10px;
     align-items: center;
   }
   li a{
     width: 15%;
   }
-  a{
-    min-width: 100px;
-    border-radius: 10px;
-  }
+ 
   .top{
     align-items: center;
     text-align: center;
@@ -131,7 +132,10 @@ body {
     width: 75%;
     padding: 10px;
     margin: 10px;
+    border-radius: 15px;
+    overflow: hidden;
   }
+ 
   /*about me*/
   #txt{
     float: left;
@@ -147,11 +151,7 @@ body {
     padding: 50px;
     margin: 20px;
   }
-  #me{
-    border: 10px solid #75563e;
-    padding: 20px;
-    margin: 10px;
-  }
+  
   /*Testimonials page*/
   .grid-container{
     display: grid;
@@ -185,7 +185,7 @@ body {
     background-color:#e6b986;
     border-radius: 5px;
     padding: 24px 32px;
-    margin: 16px 36px;
+    margin: 16px 70px;
   }
   .container p{
     line-height: 1.6em;
@@ -292,7 +292,7 @@ body {
     background-color:#e6b986;
     border-radius: 5px;
     padding: 24px 32px;
-    margin: 16px 36px;
+    margin: 16px 70px;
     align-items: center;
     width: 75%;
   }
@@ -314,15 +314,29 @@ body {
   }
   #service{
     background-color: #e6b986;
-    border: 10px solid #e6b986;
-    padding: 24px 32px;
-    margin: 16px 36px;
-    height: fit-content;
+    margin: 40px 70px;
+    padding: 20px;
   }
   #price{
     display: flex;
+    flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
+
+  }
+  #price li {
+    list-style-type: none;
+    background-color:#75563e;
+    color:#e6b986;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .p-title {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    padding-bottom: 10px;
   }
   @media screen and (max-width: 900px){
     body{
@@ -336,15 +350,14 @@ body {
       display: block;
       width: 80%;
     }
+    nav a {
+      margin: 5px;
+      padding: 8px;
+    }
     #top {
       flex-direction: column;
       align-content: stretch;
       width: 100%;
-    }
-    #me{
-      width: 75%;
-      padding: 20px;
-      margin: 10px;
     }
     ul {
       padding-inline-start: 0;
@@ -356,33 +369,49 @@ body {
     footer p, footer a {
       font-size: 1em;
     }
-    #price{
-      display: block;
+    #service {
+      margin: 30px 0;
     }
-    li{
-      width: 80%;
+    #price {
+      width: 100%;
+    }
+    #price li {
+      width: 90%;
     }
   }
   @media (max-width: 500px) {
   
     #top{
-      margin: 10px;
-      padding:10px;
+      margin: 0 10px 10px 10px;
+      padding:0 10px 10px 10px;
+    }
+    #intro {
+      padding: 0;
+    }
+    #me {
+      width: 95%;
+      margin-left: -10px;
     }
     .container {
+      text-align: center;
+      margin: 5px;
+    }
+    #service {
+      margin: 0;
+      padding: 0;
+    }
+    #service h2 {
       text-align: center;
     }
     nav{
       display: block;
     }
-    nav img{
-      display: block;
-      margin: 0 auto;
+    #top a {
+      margin-left: -24px;
+      padding-left:-24px;
     }
-    #me{
-      width: 75%;
-      padding: 20px;
-      margin: 10px;
+    .logolink {
+      margin: 0 auto;
     }
     .container img {
       margin: auto;
@@ -392,6 +421,7 @@ body {
     .letter img{
       width: 100%;
     }
+    
   footer{
     flex-direction: column;
   }
