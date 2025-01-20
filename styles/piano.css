@@ -332,7 +332,6 @@ body {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
-
   }
   #price li {
     list-style-type: none;
@@ -341,6 +340,7 @@ body {
     padding: 20px;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 5px 5px 10px #1b4965;
   }
   .p-title {
     font-weight: bold;
